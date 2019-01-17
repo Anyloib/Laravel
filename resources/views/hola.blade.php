@@ -12,5 +12,25 @@
     <h1>
         Hola ANYLOIB
     </h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Telefono</th>
+                <th>Correo</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach($contactos as $contactos)
+            <tr>
+                <td>{{$contactos->nombre}}</td>
+                <td>{{$contactos->telefono}}</td>
+                <td>{{$contactos->correo}}</td>
+            </tr>
+            @endforeach
+        </tbody>
+    </table>
 </body>
 </html>
